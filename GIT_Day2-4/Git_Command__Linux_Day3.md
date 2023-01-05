@@ -22,7 +22,13 @@
 
 - cd "directory_path"
 
+#  to check the present wokring directory 
 
+- pwd
+
+# to go back to previous folder 
+
+- cd ..
 
 
 
