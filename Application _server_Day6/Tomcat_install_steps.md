@@ -89,19 +89,11 @@ ________________________________________________________________________________
 docker run -it --rm -p 8888:8080 tomcat:9.0
 
 To run the Tomcat server we need to pass the following command 
--  cd /usr/local/tomcat/webapps.dist
--  cp -R * ../webapps
-
-Or 
--  cp -R /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
-
-
 ________________________________________________________________________________________________________________________________________________
 
-# to run the services
-- cd bin
 
-# to check the whether it is running 
+
+# to check the whether  it is running 
 - ps -ef | grep tomcat
 
 # to check the permissions
