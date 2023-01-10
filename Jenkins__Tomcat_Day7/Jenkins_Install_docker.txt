@@ -1,0 +1,23 @@
+
+# connect to root
+- sudo su 
+
+# update the Linux
+- yum update -y
+
+# to install docker 
+- yum install docker -y
+
+# to start the docker services
+- systemctl start docker
+
+
+# to Enable the docker services
+
+- systemctl enable docker
+
+
+
+# To run jenkins server using docker image
+
+- docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts

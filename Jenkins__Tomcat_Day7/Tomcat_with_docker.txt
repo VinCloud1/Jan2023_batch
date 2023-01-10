@@ -1,0 +1,7 @@
+# Install using docker
+ 
+- yum install docker 
+- docker run -p 8888:8080 tomcat:9.0
+
+To run the Tomcat server we need to pass the following command 
+________________________________________________________________________________________________________________________________________________
