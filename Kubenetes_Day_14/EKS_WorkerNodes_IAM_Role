@@ -1,0 +1,15 @@
+EKS_WorkerNodes_IAM_Role
+
+Create IAM Role
+
+ - Open the IAM console at https://console.aws.amazon.com/iam/.
+
+- Choose Roles, then Create role.
+
+- Under Trusted entity type, select AWS service.
+
+- Select EC2 and next
+
+ - AmazonEKSWorkerNodePolicy
+ - AmazonEKS_CNI_Policy
+ - AmazonEC2ContainerRegistryReadOnly
