@@ -1,8 +1,5 @@
 
-# command to connect from one linux machine to other linux machine through ssh 
-- ssh -i "private_key"  user@ipaddress
 
-Example: ssh -i Demo_vinod_1Sep.pem ec2-user@3.89.74.234
 
 
 # Where to check my public key 
@@ -23,6 +20,11 @@ Example: ssh -i Demo_vinod_1Sep.pem ec2-user@3.89.74.234
 - cd  .ssh 
 - vi authorized_keys
 
+
+# command to connect from one linux machine to other linux machine through ssh 
+- ssh -i "private_key"  user@ipaddress
+
+Example: ssh -i Demo_vinod_1Sep.pem ec2-user@3.89.74.234
 
 
 # then ssh should work without key 
