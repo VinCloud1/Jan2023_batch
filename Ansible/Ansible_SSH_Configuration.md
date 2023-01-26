@@ -1,4 +1,8 @@
 
+# How to use the password less authentication
+
+- ssh-keygen   
+(This will generate the  key pair (id_rsa and id_rsa.pub)   under .ssh)
 
 
 
@@ -7,14 +11,6 @@
 - ls
 - cat authorized_keys
 - vi authorized_keys
-
-
-# How to use the password less authentication
-
-- ssh-keygen   
-(This will generate the  key pair (id_rsa and id_rsa.pub)   under .ssh)
-
-
 
 # We need to copy the id_rsa.pub key to the VM's/ machine which need to be connected- hosts unders authenticatedkeys
 - cd  .ssh 
