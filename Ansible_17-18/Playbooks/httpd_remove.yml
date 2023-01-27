@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true 
+  tasks:
+    - name: Removing the latest version of Apache
+      ansible.builtin.yum:
+        name: httpd
+        state: absent
+       
+    - name: Stop service httpd
+      ansible.builtin.service:
+        name: httpd
+        state: stopped     
