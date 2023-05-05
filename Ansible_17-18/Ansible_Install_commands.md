@@ -1,4 +1,4 @@
-# laster 2023 way to install ansible is below 
+# lastest 2023 way to install ansible is below 
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 
 - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
