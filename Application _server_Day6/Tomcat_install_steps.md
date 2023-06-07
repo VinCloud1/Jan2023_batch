@@ -56,8 +56,8 @@ Usually it will under 2 places, and it neeeds to be changed in both the places
 # <!--
 
 Sample
-  <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-  allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> 
+#  <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+#  allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> 
 
 #-->
 
@@ -65,17 +65,17 @@ Sample
   
 # Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users using vi tomcat-users.xml
 
-/home/ec2-user/tomcat/apache-tomcat-8.5.82/conf/tomcat-users.xml file
+# /home/ec2-user/tomcat/apache-tomcat-8.5.82/conf/tomcat-users.xml file
 
 
 
- <role rolename="manager-gui"/>
- <role rolename="manager-script"/>
- <role rolename="manager-jmx"/>
- <role rolename="manager-status"/>
- <user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
- <user username="deployer" password="deployer" roles="manager-script"/>
- <user username="tomcat" password="s3cret" roles="manager-gui"/>  
+# <role rolename="manager-gui"/>
+# <role rolename="manager-script"/>
+# <role rolename="manager-jmx"/>
+# <role rolename="manager-status"/>
+# <user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+# <user username="deployer" password="deployer" roles="manager-script"/>
+# <user username="tomcat" password="s3cret" roles="manager-gui"/>  
 
 
 # Restart the server 
