@@ -29,5 +29,13 @@ Command to run the first to clean the old output and then do the maven build
 # to list the files in the dir
  - ls
  - ll
- 
 
+
+# We need to  share teh output fiel to testing team or release team by using different any of below method
+
+- WINSCP
+https://winscp.net/eng/index.php
+- SCP
+Example scp -i key.pem filename ec2-user@ipaddress:/home/ec2-user
+- Mobaxterm
+https://mobaxterm.mobatek.net/
