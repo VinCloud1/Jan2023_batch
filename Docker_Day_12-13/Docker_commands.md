@@ -42,3 +42,11 @@ docker run -it ubuntu
 
 # To run the container in the interactive mode (to Enter inside th e container)
 docker exec -it "container_id" /bin/bash
+
+# Start the container with the --restart flag, specifying the desired restart policy. There are several restart policies available, including no, on-failure, unless-stopped, and always. 
+# In this  case, unless-stopped or always would be appropriate
+
+docker run --restart unless-stopped <your-container-options>
+
+
+
