@@ -1,15 +1,18 @@
 # Install Tomcat 
-- wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.84/bin/apache-tomcat-8.5.84.tar.gz
+- wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.92/bin/apache-tomcat-8.5.92.tar.gz
 
 
 # to Untar
-- tar -zvxf apache-tomcat-8.5.82.tar.gz
+- tar -zvxf apache-tomcat-8.5.92.tar.gz
 
+
+# to install java 
+yum install java-11 -y
 
 # to start the services 
 
  # go to 
-- cd /home/ec2-user/tomcat/apache-tomcat-8.5.84/bin/
+- cd /home/ec2-user/apache-tomcat-8.5.92/bin/
 - ./startup.sh
 
 
@@ -33,8 +36,8 @@
 - find / -name context.xml
 Usually it will under 2 places, and it neeeds to be changed in both the places
 
-- /home/ec2-user/tomcat/apache-tomcat-8.5.84/webapps/host-manager/META-INF/context.xml
-- /home/ec2-user/tomcat/apache-tomcat-8.5.84/webapps/manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-8.5.92/webapps/host-manager/META-INF/context.xml
+- /home/ec2-user/apache-tomcat-8.5.92/webapps/manager/META-INF/context.xml
 
 
 # to Edit the File with vi
@@ -42,6 +45,7 @@ Usually it will under 2 places, and it neeeds to be changed in both the places
 - i 
 
 # To save and exit from vi 
+press (ctlt + c )
 :wq
 
 
@@ -49,11 +53,7 @@ Usually it will under 2 places, and it neeeds to be changed in both the places
 :q
 
 
-# And comment the value using below codes
-
-<!--   -->
-
-# <!--
+#  Delete below lines
 
 Sample
 .  <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
@@ -65,7 +65,7 @@ Sample
   
 # Update users information in the tomcat-users.xml file goto tomcat home directory and Add below users using vi tomcat-users.xml
 
-# /home/ec2-user/tomcat/apache-tomcat-8.5.82/conf/tomcat-users.xml file
+# /home/ec2-user/apache-tomcat-8.5.92/conf/tomcat-users.xml file
 
 
 
@@ -93,9 +93,4 @@ ________________________________________________________________________________
 
 # to check the permissions
 ls -l 
-
-
-
-
-
 
