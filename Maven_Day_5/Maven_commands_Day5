@@ -39,3 +39,8 @@ https://winscp.net/eng/index.php
 Example scp -i key.pem filename ec2-user@ipaddress:/home/ec2-user
 - Mobaxterm
 https://mobaxterm.mobatek.net/
+
+
+# If you need to  install any specific version of Maven - please follow the steps  undedr this link 
+
+https://www.digitalocean.com/community/tutorials/install-maven-linux-ubuntu
