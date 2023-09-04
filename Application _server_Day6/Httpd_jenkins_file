@@ -1,0 +1,6 @@
+pwd
+ls
+cd /var/www/
+rm -rf html
+mkdir html
+mv /var/jenkins/workspace/HTML_project/* /var/www/html/
