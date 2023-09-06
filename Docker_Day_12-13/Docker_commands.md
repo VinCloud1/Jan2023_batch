@@ -56,4 +56,9 @@ docker exec -it "container_id" /bin/bash
 docker run --restart unless-stopped <your-container-options>
 
 
+# how do we copy a  file from docker client  to docker container manually?
+docker cp ./filename container_id:/path/to/container/
+Example:
+docker cp ./Dockerfile b44eb1aab2dd:/usr/local/tomcat/temp/
+
 
